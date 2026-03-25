@@ -1,1 +1,17 @@
+N = int(input())
+People = []
+Rank = [1] * N
 
+for _ in range(N):
+    WeightHeight = list(map(int, input().split()))
+    People.append(WeightHeight)
+
+for I in range(N):
+    for J in range(N):
+        if I == J:
+            continue
+        else:
+            if People[I][0] < People[J][0] and People[I][1] < People[J][1]:
+                Rank[I] = Rank[I] + 1
+
+print(*Rank)
