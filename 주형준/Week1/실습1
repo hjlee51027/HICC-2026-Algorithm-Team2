@@ -1,1 +1,11 @@
+N = int(input())
+X = 99
 
+if N < 100:
+    print(N)
+else:
+    X = 99
+    for i in range(100, N + 1):
+        if (i // 100) - ((i // 10) % 10) == ((i // 10) % 10) - (i % 10):
+            X += 1
+    print(X)
