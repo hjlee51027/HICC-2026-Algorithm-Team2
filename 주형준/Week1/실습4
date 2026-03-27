@@ -8,5 +8,5 @@ vowels = ['a', 'e', 'i', 'o', 'u']
 for c in combinations(words, L):
     k = len(set(c) & set(vowels))
 
-    if (k >= 1) & (L - k >= 2):
+    if (k >= 1) and (L - k >= 2):
         print("".join(c))
