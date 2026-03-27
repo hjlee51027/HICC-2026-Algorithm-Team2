@@ -1,5 +1,5 @@
 N = int(input())
-X = 
+X = 99 
 
 if N < 100:
     print(N)
