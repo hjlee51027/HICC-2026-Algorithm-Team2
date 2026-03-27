@@ -11,7 +11,7 @@ for i in range(N):
         if i == j:
             continue
         else:
-            if (people[i][0] < people[j][0]) & (people[i][1] < people[j][1]):
+            if (people[i][0] < people[j][0]) and (people[i][1] < people[j][1]):
                 rank[i] = rank[i] + 1
 
 print(*rank)
