@@ -1,7 +1,7 @@
 from itertools import permutations
 
 
-N = int(input()
+N = int(input())
 nums = list(map(int, input().split()))
 max_sum = 0
 
