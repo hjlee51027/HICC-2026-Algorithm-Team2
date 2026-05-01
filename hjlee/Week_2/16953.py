@@ -15,7 +15,6 @@ while b > a:
     else:
         break
 
-# 결과 판단
 if b == a:
     print(count)
 else:
