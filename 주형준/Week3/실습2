@@ -1,0 +1,15 @@
+for i in target:
+    
+    while current_num <= i:
+        stack.append(current_num)
+        result.append("+")
+        current_num += 1
+
+    if stack and stack[-1] == i:
+        stack.pop()
+        result.append("-")
+    else:
+        is_possible = print("NO")
+        exit()
+
+print("\n".join(result))
